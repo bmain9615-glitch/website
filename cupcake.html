@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cupcake Game 🧁</title>
+
+  <!-- Your site styling -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- 2048-Cupcakes CSS -->
+  <link rel="stylesheet" href="games/cupcake/style/main.css" />
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand">A &amp; C</div>
+      <input id="menu" class="menu-btn" type="checkbox" />
+      <label for="menu" class="menu-icon" aria-label="Toggle navigation" aria-controls="nav-list" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </label>
+      <nav aria-label="Primary">
+        <ul id="nav-list">
+          <li><a href="index.html#home">Home</a></li>
+          <li><a href="index.html#story">Our Story</a></li>
+          <li><a href="index.html#memories">Memories</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="surprises.html">Surprises</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section-inner card">
+    <h1>For when you want something sweet 🧁</h1>
+    <p class="muted">Beat your high score and you get a real cupcake from me.</p>
+
+    <!-- ================== 2048-Cupcakes Embedded Game ================== -->
+    <div class="container" id="cupcakes-root">
+      <div class="heading">
+        <h1 class="title">2048 Cupcakes</h1>
+
+        <div class="scores-container">
+          <div class="score-container">0</div>
+          <div class="best-container">0</div>
+        </div>
+      </div>
+
+      <div class="above-game">
+        <p class="game-intro">Join cupcakes and get to the <strong>ultimate cupcake!</strong></p>
+        <a class="restart-button">New Game</a>
+      </div>
+
+      <div class="game-container">
+        <div class="game-message">
+          <p></p>
+          <div class="lower">
+            <a class="keep-playing-button">Keep going</a>
+            <a class="retry-button">Try again</a>
+          </div>
+        </div>
+
+        <div class="grid-container">
+          <div class="grid-row">
+            <div class="grid-cell"></div><div class="grid-cell"></div>
+            <div class="grid-cell"></div><div class="grid-cell"></div>
+          </div>
+          <div class="grid-row">
+            <div class="grid-cell"></div><div class="grid-cell"></div>
+            <div class="grid-cell"></div><div class="grid-cell"></div>
+          </div>
+          <div class="grid-row">
+            <div class="grid-cell"></div><div class="grid-cell"></div>
+            <div class="grid-cell"></div><div class="grid-cell"></div>
+          </div>
+          <div class="grid-row">
+            <div class="grid-cell"></div><div class="grid-cell"></div>
+            <div class="grid-cell"></div><div class="grid-cell"></div>
+          </div>
+        </div>
+
+        <div class="tile-container"></div>
+      </div>
+
+      <p class="game-explanation">
+        <strong class="important">How to play:</strong> Use your <strong>arrow keys</strong> (or swipe) to move the tiles.
+        When two tiles with the same cupcake touch, they <strong>merge</strong> into one!
+      </p>
+    </div>
+    <!-- ================================================================ -->
+  </main>
+
+  <footer>Made with 💜 for us.</footer>
+
+  <!-- Your site JS -->
+  <script src="script.js"></script>
+
+  <!-- 2048-Cupcakes Scripts -->
+  <script src="games/cupcake/js/bind_polyfill.js"></script>
+  <script src="games/cupcake/js/classlist_polyfill.js"></script>
+  <script src="games/cupcake/js/animframe_polyfill.js"></script>
+
+  <script src="games/cupcake/js/keyboard_input_manager.js"></script>
+  <script src="games/cupcake/js/touch_input_manager.js"></script>
+
+  <script src="games/cupcake/js/html_actuator.js"></script>
+  <script src="games/cupcake/js/grid.js"></script>
+  <script src="games/cupcake/js/tile.js"></script>
+  <script src="games/cupcake/js/local_storage_manager.js"></script>
+  <script src="games/cupcake/js/game_manager.js"></script>
+
+  <script src="games/cupcake/js/application.js"></script>
+</body>
+</html>

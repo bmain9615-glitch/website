@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Letters 💌</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand">A &amp; C</div>
+      <input id="menu" class="menu-btn" type="checkbox" />
+      <label for="menu" class="menu-icon" aria-label="Toggle navigation" aria-controls="nav-list" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </label>
+      <nav aria-label="Primary">
+        <ul id="nav-list">
+          <li><a href="index.html#home">Home</a></li>
+          <li><a href="index.html#story">Our Story</a></li>
+          <li><a href="index.html#memories">Memories</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="letters.html">Letters</a></li>
+          <li><a href="videos.html">Videos</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section-inner">
+    <h1>Letters 💌</h1>
+    <p class="muted">Journal entries embedded from Google Docs.</p>
+
+    <!-- Doc 1 -->
+    <div class="card doc-card">
+      <h2>Journal — Sep 21, 2025</h2>
+      <iframe
+        class="doc-frame"
+        src="https://docs.google.com/document/d/17_BkuUaX9fkuRDIm5_EdogIrbjPKH8Nh-3ubpzSIeks/preview"
+        loading="lazy"
+        referrerpolicy="no-referrer">
+      </iframe>
+    </div>
+
+    <!-- Add more doc-card blocks as needed -->
+  </main>
+
+  <footer>
+    Made with 💜 for us.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
